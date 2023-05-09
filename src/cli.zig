@@ -654,7 +654,8 @@ pub const Arguments = struct {
         // const ResolveMatcher = strings.ExactSizeMatcher(8);
 
         opts.resolve = Api.ResolveMode.lazy;
-        ctx.debug.inspect_break = args.flag("--inspect-brk");
+        if (comptime cmd == .RunCommand or cmd == .AutoCommand or cmd == .TestCommand)
+            ctx.debug.inspect_break = args.flag("--inspect-brk");
 
         switch (comptime cmd) {
             .BuildCommand => {
