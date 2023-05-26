@@ -57,7 +57,7 @@ async function runTest(path) {
       stderr,
       status: exitCode,
       error: timedOut,
-    } = spawnSync("bd", ["test", path], {
+    } = spawnSync(process.env.BUN_EXE ?? "bun", ["test", path], {
       stdio: ["ignore", "pipe", "pipe"],
       timeout: 1000 * 60 * 3,
       env: {
