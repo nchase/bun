@@ -2,57 +2,6 @@
 // Do not edit by hand.
 type RemoveThis<F> = F extends (this: infer T, ...args: infer A) => infer R ? (...args: A) => R : F;
 
-// WritableStreamInternals.ts
-declare const $isWritableStream: RemoveThis<typeof import("./ts/WritableStreamInternals")["isWritableStream"]>;
-declare const $isWritableStreamDefaultWriter: RemoveThis<typeof import("./ts/WritableStreamInternals")["isWritableStreamDefaultWriter"]>;
-declare const $acquireWritableStreamDefaultWriter: RemoveThis<typeof import("./ts/WritableStreamInternals")["acquireWritableStreamDefaultWriter"]>;
-declare const $createWritableStream: RemoveThis<typeof import("./ts/WritableStreamInternals")["createWritableStream"]>;
-declare const $createInternalWritableStreamFromUnderlyingSink: RemoveThis<typeof import("./ts/WritableStreamInternals")["createInternalWritableStreamFromUnderlyingSink"]>;
-declare const $initializeWritableStreamSlots: RemoveThis<typeof import("./ts/WritableStreamInternals")["initializeWritableStreamSlots"]>;
-declare const $writableStreamCloseForBindings: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamCloseForBindings"]>;
-declare const $writableStreamAbortForBindings: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamAbortForBindings"]>;
-declare const $isWritableStreamLocked: RemoveThis<typeof import("./ts/WritableStreamInternals")["isWritableStreamLocked"]>;
-declare const $setUpWritableStreamDefaultWriter: RemoveThis<typeof import("./ts/WritableStreamInternals")["setUpWritableStreamDefaultWriter"]>;
-declare const $writableStreamAbort: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamAbort"]>;
-declare const $writableStreamClose: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamClose"]>;
-declare const $writableStreamAddWriteRequest: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamAddWriteRequest"]>;
-declare const $writableStreamCloseQueuedOrInFlight: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamCloseQueuedOrInFlight"]>;
-declare const $writableStreamDealWithRejection: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDealWithRejection"]>;
-declare const $writableStreamFinishErroring: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamFinishErroring"]>;
-declare const $writableStreamFinishInFlightClose: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamFinishInFlightClose"]>;
-declare const $writableStreamFinishInFlightCloseWithError: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamFinishInFlightCloseWithError"]>;
-declare const $writableStreamFinishInFlightWrite: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamFinishInFlightWrite"]>;
-declare const $writableStreamFinishInFlightWriteWithError: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamFinishInFlightWriteWithError"]>;
-declare const $writableStreamHasOperationMarkedInFlight: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamHasOperationMarkedInFlight"]>;
-declare const $writableStreamMarkCloseRequestInFlight: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamMarkCloseRequestInFlight"]>;
-declare const $writableStreamMarkFirstWriteRequestInFlight: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamMarkFirstWriteRequestInFlight"]>;
-declare const $writableStreamRejectCloseAndClosedPromiseIfNeeded: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamRejectCloseAndClosedPromiseIfNeeded"]>;
-declare const $writableStreamStartErroring: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamStartErroring"]>;
-declare const $writableStreamUpdateBackpressure: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamUpdateBackpressure"]>;
-declare const $writableStreamDefaultWriterAbort: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultWriterAbort"]>;
-declare const $writableStreamDefaultWriterClose: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultWriterClose"]>;
-declare const $writableStreamDefaultWriterCloseWithErrorPropagation: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultWriterCloseWithErrorPropagation"]>;
-declare const $writableStreamDefaultWriterEnsureClosedPromiseRejected: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultWriterEnsureClosedPromiseRejected"]>;
-declare const $writableStreamDefaultWriterEnsureReadyPromiseRejected: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultWriterEnsureReadyPromiseRejected"]>;
-declare const $writableStreamDefaultWriterGetDesiredSize: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultWriterGetDesiredSize"]>;
-declare const $writableStreamDefaultWriterRelease: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultWriterRelease"]>;
-declare const $writableStreamDefaultWriterWrite: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultWriterWrite"]>;
-declare const $setUpWritableStreamDefaultController: RemoveThis<typeof import("./ts/WritableStreamInternals")["setUpWritableStreamDefaultController"]>;
-declare const $writableStreamDefaultControllerStart: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultControllerStart"]>;
-declare const $setUpWritableStreamDefaultControllerFromUnderlyingSink: RemoveThis<typeof import("./ts/WritableStreamInternals")["setUpWritableStreamDefaultControllerFromUnderlyingSink"]>;
-declare const $writableStreamDefaultControllerAdvanceQueueIfNeeded: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultControllerAdvanceQueueIfNeeded"]>;
-declare const $isCloseSentinel: RemoveThis<typeof import("./ts/WritableStreamInternals")["isCloseSentinel"]>;
-declare const $writableStreamDefaultControllerClearAlgorithms: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultControllerClearAlgorithms"]>;
-declare const $writableStreamDefaultControllerClose: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultControllerClose"]>;
-declare const $writableStreamDefaultControllerError: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultControllerError"]>;
-declare const $writableStreamDefaultControllerErrorIfNeeded: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultControllerErrorIfNeeded"]>;
-declare const $writableStreamDefaultControllerGetBackpressure: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultControllerGetBackpressure"]>;
-declare const $writableStreamDefaultControllerGetChunkSize: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultControllerGetChunkSize"]>;
-declare const $writableStreamDefaultControllerGetDesiredSize: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultControllerGetDesiredSize"]>;
-declare const $writableStreamDefaultControllerProcessClose: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultControllerProcessClose"]>;
-declare const $writableStreamDefaultControllerProcessWrite: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultControllerProcessWrite"]>;
-declare const $writableStreamDefaultControllerWrite: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultControllerWrite"]>;
-
 // TransformStreamInternals.ts
 declare const $isTransformStream: RemoveThis<typeof import("./ts/TransformStreamInternals")["isTransformStream"]>;
 declare const $isTransformStreamDefaultController: RemoveThis<typeof import("./ts/TransformStreamInternals")["isTransformStreamDefaultController"]>;
@@ -139,27 +88,6 @@ declare const $readableStreamToTextDirect: RemoveThis<typeof import("./ts/Readab
 declare const $readableStreamToArrayDirect: RemoveThis<typeof import("./ts/ReadableStreamInternals")["readableStreamToArrayDirect"]>;
 declare const $readableStreamDefineLazyIterators: RemoveThis<typeof import("./ts/ReadableStreamInternals")["readableStreamDefineLazyIterators"]>;
 
-// StreamInternals.ts
-declare const $markPromiseAsHandled: RemoveThis<typeof import("./ts/StreamInternals")["markPromiseAsHandled"]>;
-declare const $shieldingPromiseResolve: RemoveThis<typeof import("./ts/StreamInternals")["shieldingPromiseResolve"]>;
-declare const $promiseInvokeOrNoopMethodNoCatch: RemoveThis<typeof import("./ts/StreamInternals")["promiseInvokeOrNoopMethodNoCatch"]>;
-declare const $promiseInvokeOrNoopNoCatch: RemoveThis<typeof import("./ts/StreamInternals")["promiseInvokeOrNoopNoCatch"]>;
-declare const $promiseInvokeOrNoopMethod: RemoveThis<typeof import("./ts/StreamInternals")["promiseInvokeOrNoopMethod"]>;
-declare const $promiseInvokeOrNoop: RemoveThis<typeof import("./ts/StreamInternals")["promiseInvokeOrNoop"]>;
-declare const $promiseInvokeOrFallbackOrNoop: RemoveThis<typeof import("./ts/StreamInternals")["promiseInvokeOrFallbackOrNoop"]>;
-declare const $validateAndNormalizeQueuingStrategy: RemoveThis<typeof import("./ts/StreamInternals")["validateAndNormalizeQueuingStrategy"]>;
-declare const $createFIFO: RemoveThis<typeof import("./ts/StreamInternals")["createFIFO"]>;
-declare const $newQueue: RemoveThis<typeof import("./ts/StreamInternals")["newQueue"]>;
-declare const $dequeueValue: RemoveThis<typeof import("./ts/StreamInternals")["dequeueValue"]>;
-declare const $enqueueValueWithSize: RemoveThis<typeof import("./ts/StreamInternals")["enqueueValueWithSize"]>;
-declare const $peekQueueValue: RemoveThis<typeof import("./ts/StreamInternals")["peekQueueValue"]>;
-declare const $resetQueue: RemoveThis<typeof import("./ts/StreamInternals")["resetQueue"]>;
-declare const $extractSizeAlgorithm: RemoveThis<typeof import("./ts/StreamInternals")["extractSizeAlgorithm"]>;
-declare const $extractHighWaterMark: RemoveThis<typeof import("./ts/StreamInternals")["extractHighWaterMark"]>;
-declare const $extractHighWaterMarkFromQueuingStrategyInit: RemoveThis<typeof import("./ts/StreamInternals")["extractHighWaterMarkFromQueuingStrategyInit"]>;
-declare const $createFulfilledPromise: RemoveThis<typeof import("./ts/StreamInternals")["createFulfilledPromise"]>;
-declare const $toDictionary: RemoveThis<typeof import("./ts/StreamInternals")["toDictionary"]>;
-
 // ReadableByteStreamInternals.ts
 declare const $privateInitializeReadableByteStreamController: RemoveThis<typeof import("./ts/ReadableByteStreamInternals")["privateInitializeReadableByteStreamController"]>;
 declare const $readableStreamByteStreamControllerStart: RemoveThis<typeof import("./ts/ReadableByteStreamInternals")["readableStreamByteStreamControllerStart"]>;
@@ -197,3 +125,75 @@ declare const $readableStreamFulfillReadIntoRequest: RemoveThis<typeof import(".
 declare const $readableStreamBYOBReaderRead: RemoveThis<typeof import("./ts/ReadableByteStreamInternals")["readableStreamBYOBReaderRead"]>;
 declare const $readableByteStreamControllerPullInto: RemoveThis<typeof import("./ts/ReadableByteStreamInternals")["readableByteStreamControllerPullInto"]>;
 declare const $readableStreamAddReadIntoRequest: RemoveThis<typeof import("./ts/ReadableByteStreamInternals")["readableStreamAddReadIntoRequest"]>;
+
+// StreamInternals.ts
+declare const $markPromiseAsHandled: RemoveThis<typeof import("./ts/StreamInternals")["markPromiseAsHandled"]>;
+declare const $shieldingPromiseResolve: RemoveThis<typeof import("./ts/StreamInternals")["shieldingPromiseResolve"]>;
+declare const $promiseInvokeOrNoopMethodNoCatch: RemoveThis<typeof import("./ts/StreamInternals")["promiseInvokeOrNoopMethodNoCatch"]>;
+declare const $promiseInvokeOrNoopNoCatch: RemoveThis<typeof import("./ts/StreamInternals")["promiseInvokeOrNoopNoCatch"]>;
+declare const $promiseInvokeOrNoopMethod: RemoveThis<typeof import("./ts/StreamInternals")["promiseInvokeOrNoopMethod"]>;
+declare const $promiseInvokeOrNoop: RemoveThis<typeof import("./ts/StreamInternals")["promiseInvokeOrNoop"]>;
+declare const $promiseInvokeOrFallbackOrNoop: RemoveThis<typeof import("./ts/StreamInternals")["promiseInvokeOrFallbackOrNoop"]>;
+declare const $validateAndNormalizeQueuingStrategy: RemoveThis<typeof import("./ts/StreamInternals")["validateAndNormalizeQueuingStrategy"]>;
+declare const $createFIFO: RemoveThis<typeof import("./ts/StreamInternals")["createFIFO"]>;
+declare const $newQueue: RemoveThis<typeof import("./ts/StreamInternals")["newQueue"]>;
+declare const $dequeueValue: RemoveThis<typeof import("./ts/StreamInternals")["dequeueValue"]>;
+declare const $enqueueValueWithSize: RemoveThis<typeof import("./ts/StreamInternals")["enqueueValueWithSize"]>;
+declare const $peekQueueValue: RemoveThis<typeof import("./ts/StreamInternals")["peekQueueValue"]>;
+declare const $resetQueue: RemoveThis<typeof import("./ts/StreamInternals")["resetQueue"]>;
+declare const $extractSizeAlgorithm: RemoveThis<typeof import("./ts/StreamInternals")["extractSizeAlgorithm"]>;
+declare const $extractHighWaterMark: RemoveThis<typeof import("./ts/StreamInternals")["extractHighWaterMark"]>;
+declare const $extractHighWaterMarkFromQueuingStrategyInit: RemoveThis<typeof import("./ts/StreamInternals")["extractHighWaterMarkFromQueuingStrategyInit"]>;
+declare const $createFulfilledPromise: RemoveThis<typeof import("./ts/StreamInternals")["createFulfilledPromise"]>;
+declare const $toDictionary: RemoveThis<typeof import("./ts/StreamInternals")["toDictionary"]>;
+
+// WritableStreamInternals.ts
+declare const $isWritableStream: RemoveThis<typeof import("./ts/WritableStreamInternals")["isWritableStream"]>;
+declare const $isWritableStreamDefaultWriter: RemoveThis<typeof import("./ts/WritableStreamInternals")["isWritableStreamDefaultWriter"]>;
+declare const $acquireWritableStreamDefaultWriter: RemoveThis<typeof import("./ts/WritableStreamInternals")["acquireWritableStreamDefaultWriter"]>;
+declare const $createWritableStream: RemoveThis<typeof import("./ts/WritableStreamInternals")["createWritableStream"]>;
+declare const $createInternalWritableStreamFromUnderlyingSink: RemoveThis<typeof import("./ts/WritableStreamInternals")["createInternalWritableStreamFromUnderlyingSink"]>;
+declare const $initializeWritableStreamSlots: RemoveThis<typeof import("./ts/WritableStreamInternals")["initializeWritableStreamSlots"]>;
+declare const $writableStreamCloseForBindings: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamCloseForBindings"]>;
+declare const $writableStreamAbortForBindings: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamAbortForBindings"]>;
+declare const $isWritableStreamLocked: RemoveThis<typeof import("./ts/WritableStreamInternals")["isWritableStreamLocked"]>;
+declare const $setUpWritableStreamDefaultWriter: RemoveThis<typeof import("./ts/WritableStreamInternals")["setUpWritableStreamDefaultWriter"]>;
+declare const $writableStreamAbort: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamAbort"]>;
+declare const $writableStreamClose: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamClose"]>;
+declare const $writableStreamAddWriteRequest: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamAddWriteRequest"]>;
+declare const $writableStreamCloseQueuedOrInFlight: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamCloseQueuedOrInFlight"]>;
+declare const $writableStreamDealWithRejection: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDealWithRejection"]>;
+declare const $writableStreamFinishErroring: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamFinishErroring"]>;
+declare const $writableStreamFinishInFlightClose: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamFinishInFlightClose"]>;
+declare const $writableStreamFinishInFlightCloseWithError: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamFinishInFlightCloseWithError"]>;
+declare const $writableStreamFinishInFlightWrite: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamFinishInFlightWrite"]>;
+declare const $writableStreamFinishInFlightWriteWithError: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamFinishInFlightWriteWithError"]>;
+declare const $writableStreamHasOperationMarkedInFlight: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamHasOperationMarkedInFlight"]>;
+declare const $writableStreamMarkCloseRequestInFlight: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamMarkCloseRequestInFlight"]>;
+declare const $writableStreamMarkFirstWriteRequestInFlight: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamMarkFirstWriteRequestInFlight"]>;
+declare const $writableStreamRejectCloseAndClosedPromiseIfNeeded: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamRejectCloseAndClosedPromiseIfNeeded"]>;
+declare const $writableStreamStartErroring: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamStartErroring"]>;
+declare const $writableStreamUpdateBackpressure: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamUpdateBackpressure"]>;
+declare const $writableStreamDefaultWriterAbort: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultWriterAbort"]>;
+declare const $writableStreamDefaultWriterClose: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultWriterClose"]>;
+declare const $writableStreamDefaultWriterCloseWithErrorPropagation: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultWriterCloseWithErrorPropagation"]>;
+declare const $writableStreamDefaultWriterEnsureClosedPromiseRejected: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultWriterEnsureClosedPromiseRejected"]>;
+declare const $writableStreamDefaultWriterEnsureReadyPromiseRejected: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultWriterEnsureReadyPromiseRejected"]>;
+declare const $writableStreamDefaultWriterGetDesiredSize: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultWriterGetDesiredSize"]>;
+declare const $writableStreamDefaultWriterRelease: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultWriterRelease"]>;
+declare const $writableStreamDefaultWriterWrite: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultWriterWrite"]>;
+declare const $setUpWritableStreamDefaultController: RemoveThis<typeof import("./ts/WritableStreamInternals")["setUpWritableStreamDefaultController"]>;
+declare const $writableStreamDefaultControllerStart: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultControllerStart"]>;
+declare const $setUpWritableStreamDefaultControllerFromUnderlyingSink: RemoveThis<typeof import("./ts/WritableStreamInternals")["setUpWritableStreamDefaultControllerFromUnderlyingSink"]>;
+declare const $writableStreamDefaultControllerAdvanceQueueIfNeeded: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultControllerAdvanceQueueIfNeeded"]>;
+declare const $isCloseSentinel: RemoveThis<typeof import("./ts/WritableStreamInternals")["isCloseSentinel"]>;
+declare const $writableStreamDefaultControllerClearAlgorithms: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultControllerClearAlgorithms"]>;
+declare const $writableStreamDefaultControllerClose: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultControllerClose"]>;
+declare const $writableStreamDefaultControllerError: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultControllerError"]>;
+declare const $writableStreamDefaultControllerErrorIfNeeded: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultControllerErrorIfNeeded"]>;
+declare const $writableStreamDefaultControllerGetBackpressure: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultControllerGetBackpressure"]>;
+declare const $writableStreamDefaultControllerGetChunkSize: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultControllerGetChunkSize"]>;
+declare const $writableStreamDefaultControllerGetDesiredSize: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultControllerGetDesiredSize"]>;
+declare const $writableStreamDefaultControllerProcessClose: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultControllerProcessClose"]>;
+declare const $writableStreamDefaultControllerProcessWrite: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultControllerProcessWrite"]>;
+declare const $writableStreamDefaultControllerWrite: RemoveThis<typeof import("./ts/WritableStreamInternals")["writableStreamDefaultControllerWrite"]>;
