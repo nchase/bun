@@ -3194,9 +3194,6 @@ declare module "*.txt" {
   export = text;
 }
 
-interface EventSourceInit {
-    withCredentials?: boolean;
-}
 
 interface EventSourceEventMap {
     "error": Event;
